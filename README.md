@@ -65,3 +65,16 @@ python run.py --feature 3
 - Feature 4 Frequency off the issues are created 
 plotted against time
 
+## TESTING
+
+## Feature 1 - Usage Analysis
+Unit tests for UsageAnalysis were made using unittest with mock data. Test scenarios that were tried included standard uses, large data sets, duplicate labels, issues with no labels, and completely empty issues. Tests passed at 95% coverage and proved the accuracy of label counts and the robustness in the handling of edge cases.
+
+## Feature 2 - Resolution time Analysis
+Unit tests for the ResolutionTimeAnalysis module were run using the unittest framework for scenarios such as standard use cases with valid dates, empty datasets, all open issues, and malformed date formats. These tests cover the different ways data may be handled; how errors can be managed; and that resolution times are plotted correctly, with 100% code coverage. 
+
+## Feature 3 - Issue Tree Visualizer
+This test file validates the functionality of the IssueTreeVisualizer class using mock issue data to simulate realistic scenarios. It thoroughly tests core methods such as load_issues, filter_by_date, build_graph, and draw_graph for various valid, edge, and error cases. Additionally, the run method is tested to ensure the end-to-end workflow operates as expected. Current tests achieve 95% code coverage.
+
+## Feature 4 - Frequency of Issue Creation
+Unit tests were provided for the module frequencyOfIssueCreation using mock issues to test that it works as intended. Tests of processing dates when issues were created and calling the correct functions to plot were performed. Tests covered code with 100% for Issues that were mocked with specific dates were analyzed, confirming frequency and plotting workflows worked as expected.
